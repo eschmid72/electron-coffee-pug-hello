@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
+  "config": {
+    "electron-version": "1.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eschmid72/electron-coffee-pug-hello.git"
+  },
   "dependencies": {
     "coffee-script": "^1.10.0",
     "electron-pug": "^1.5.0"
