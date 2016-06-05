@@ -2,7 +2,14 @@ electron = require 'electron'
 app = electron.app
 BrowserWindow = electron.BrowserWindow
 
-pug = require('electron-pug') {pretty: true}
+
+pug = require('electron-pug') {pretty: false}
+
+# supporting coffee-script within .pug files
+coffee = require 'coffee-script'
+filters = require('pug').filters
+filters.coffee = (code) ->
+  coffee.compile code
 
 win = null
 
